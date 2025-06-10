@@ -1,0 +1,86 @@
+{
+    "name": "Rest & Recharge",
+    "description": "A set of cards with various exercises and activities to help relax and rejuvenate, as well as provide some ideas for self-care.",
+    "cards": [
+        {
+            "id": "pr1",
+            "title": "Progressive Muscle Relaxation",
+            "duration": 15,
+            "description": "Systematic tension and release of major muscle groups to reduce physical tension and promote recovery",
+            "instructions": "1. Find a quiet space and lie down\n2. Start with your toes, tense for 5 seconds\n3. Release and notice the relaxation\n4. Progress upward through each muscle group\n5. End with facial muscles\n6. Rest for 2 minutes after completion\n",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "pr2",
+            "title": "Restorative Yoga Flow",
+            "duration": 20,
+            "description": "Gentle stretching sequence focusing on major muscle groups and joints",
+            "instructions": "1. Begin in child's pose (3 min)\n2. Cat-cow stretches (2 min)\n3. Downward dog (2 min)\n4. Gentle forward folds (3 min)\n5. Supine twist (5 min each side)\n6. Savasana (5 min)\n",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "pr3",
+            "title": "Recovery Mobility Routine",
+            "duration": 25,
+            "description": "Joint mobility exercises to improve range of motion and reduce stiffness",
+            "instructions": "1. Ankle circles (20 each)\n2. Hip circles (15 each direction)\n3. Arm circles (20 each)\n4. Neck mobility (gentle circles)\n5. Shoulder blade squeezes\n6. Wrist and finger mobility\n7. Hold final stretches for 30s each\n",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "pr4",
+            "title": "Self-Massage Session",
+            "duration": 15,
+            "description": "Targeted self-massage techniques using foam roller or massage ball",
+            "instructions": "1. Roll calves (2 min each)\n2. IT bands (2 min each)\n3. Quadriceps (2 min each)\n4. Upper back (3 min)\n5. Focus on tender areas for 30s\n6. Gentle stretching after\n",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "pr5",
+            "title": "Active Recovery Walk",
+            "duration": 30,
+            "description": "Structured walking session with breathing focus and gentle movement",
+            "instructions": "1. Start with 5 min warm-up walk\n2. Incorporate arm swings every 5 min\n3. Practice deep breathing for 2 min intervals\n4. Include 5 min of backward walking\n5. End with gentle stretching\n",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "mr1",
+            "title": "Mindful Breathing",
+            "duration": 10,
+            "description": "Focused breathing exercise to calm the mind and reduce mental fatigue",
+            "instructions": "1. Sit comfortably or lie down\n2. Breathe in for 4 counts\n3. Hold for 4 counts\n4. Exhale for 6 counts\n5. Repeat for duration\n6. If mind wanders, gently return focus\n",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "mr2",
+            "title": "Mental Declutter",
+            "duration": 20,
+            "description": "Structured brain dump and organization exercise",
+            "instructions": "1. Write down all thoughts for 5 min\n2. Categorize items (urgent/important)\n3. Identify top 3 priorities\n4. Schedule or delegate items\n5. Close with 2 min reflection\n",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "mr3",
+            "title": "Visualization Reset",
+            "duration": 15,
+            "description": "Guided imagery exercise for mental refreshment",
+            "instructions": "1. Close eyes, get comfortable\n2. Imagine peaceful location\n3. Engage all senses\n4. Visualize tension releasing\n5. Slowly return to present\n6. Take 3 deep breaths\n",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "mr4",
+            "title": "Focus Restoration",
+            "duration": 25,
+            "description": "Sequence of exercises to rebuild concentration",
+            "instructions": "1. Single-point focus (5 min)\n2. Counting breath cycles\n3. Body scan meditation\n4. Sound awareness exercise\n5. Return to task mindfully\n",
+            "difficulty": "advanced"
+        },
+        {
+            "id": "mr5",
+            "title": "Digital Detox",
+            "duration": 40,
+            "description": "Structured break from digital devices with alternative activities",
+            "instructions": "1. Turn off all notifications\n2. Store devices out of sight\n3. Read physical book (15 min)\n4. Take short walk (15 min)\n5. Journal reflections (10 min)\n",
+            "difficulty": "intermediate"
+        }
+    ]
+}

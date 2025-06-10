@@ -1,0 +1,326 @@
+{
+    "name": "Movement & Motivation",
+    "description": "A set of cards with various exercises and activities to help motivate and inspire, as well as provide some ideas for movement.",
+    "cards": [
+        {
+            "id": "qm1",
+            "title": "Quick Squats",
+            "duration": 5,
+            "description": "Basic squats to strengthen legs and core",
+            "instructions": "Stand with feet shoulder-width apart, lower body as if sitting, return to start",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "qm2",
+            "title": "Office Desk Stretches",
+            "duration": 5,
+            "description": "Simple stretches to combat sitting fatigue",
+            "instructions": "Perform neck rolls, shoulder shrugs, wrist rotations, and ankle circles",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "qm3",
+            "title": "Power Plank",
+            "duration": 5,
+            "description": "Core strengthening through plank variations",
+            "instructions": "Hold plank position, alternate lifting each arm and leg for stability",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "qm4",
+            "title": "Quick Cardio Burst",
+            "duration": 5,
+            "description": "Rapid cardio session to boost heart rate",
+            "instructions": "Alternate 30 seconds each of jumping jacks, high knees, and mountain climbers",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "qm5",
+            "title": "Mindful Breathing",
+            "duration": 5,
+            "description": "Focused breathing exercise for stress relief",
+            "instructions": "Sit comfortably, practice 4-7-8 breathing pattern",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "qm6",
+            "title": "HIIT Blast",
+            "duration": 10,
+            "description": "High-intensity interval training for full body",
+            "instructions": "Cycle through burpees, push-ups, squats, and lunges with 30-second intervals",
+            "difficulty": "advanced"
+        },
+        {
+            "id": "qm7",
+            "title": "Basic Yoga Flow",
+            "duration": 10,
+            "description": "Simple yoga sequence for flexibility",
+            "instructions": "Flow through sun salutation poses, hold each for 5 breaths",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "qm8",
+            "title": "Core Crusher",
+            "duration": 10,
+            "description": "Targeted ab workout",
+            "instructions": "Perform planks, crunches, leg raises, and Russian twists",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "qm9",
+            "title": "Resistance Band Workout",
+            "duration": 10,
+            "description": "Full body resistance training",
+            "instructions": "Target arms, legs, and back using resistance band exercises",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "qm10",
+            "title": "Mobility Flow",
+            "duration": 10,
+            "description": "Joint mobility and flexibility routine",
+            "instructions": "Dynamic stretches for major joints and muscle groups",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "qm11",
+            "title": "Strength Circuit",
+            "duration": 15,
+            "description": "Full body strength training",
+            "instructions": "Circuit of push-ups, squats, rows, lunges, and core exercises",
+            "difficulty": "advanced"
+        },
+        {
+            "id": "qm12",
+            "title": "Pilates Core",
+            "duration": 15,
+            "description": "Core-focused Pilates routine",
+            "instructions": "Series of controlled movements targeting deep core muscles",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "qm13",
+            "title": "Cardio Blast",
+            "duration": 15,
+            "description": "High-energy cardio session",
+            "instructions": "Mix of jumping jacks, burpees, mountain climbers, and high knees",
+            "difficulty": "advanced"
+        },
+        {
+            "id": "qm14",
+            "title": "Stretch and Restore",
+            "duration": 15,
+            "description": "Full body stretching routine",
+            "instructions": "Progressive stretching sequence for all major muscle groups",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "qm15",
+            "title": "Bodyweight Burn",
+            "duration": 15,
+            "description": "No-equipment full body workout",
+            "instructions": "Combination of squats, push-ups, dips, and core exercises",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "br1",
+            "title": "Box Breathing",
+            "duration": 5,
+            "description": "Navy SEAL breathing technique for stress management",
+            "instructions": "Inhale 4 counts, hold 4, exhale 4, hold 4, repeat",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "br2",
+            "title": "Alternate Nostril Breathing",
+            "duration": 8,
+            "description": "Balancing breath work from yoga tradition",
+            "instructions": "Alternate breathing through left and right nostrils using thumb and ring finger",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "diaphragmatic",
+            "title": "Diaphragmatic Breathing",
+            "duration": 10,
+            "description": "Deep belly breathing for relaxation",
+            "instructions": "Lie down, hand on belly, breathe deeply into diaphragm",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "coherent_breathing",
+            "title": "Coherent Breathing",
+            "duration": 12,
+            "description": "Five breaths per minute for autonomic balance",
+            "instructions": "Inhale 6 seconds, exhale 6 seconds, maintain rhythm",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "morning_wake",
+            "title": "Morning Wake-Up Sequence",
+            "duration": 10,
+            "description": "Gentle full-body stretching routine",
+            "instructions": "Progressive stretches from neck to toes, starting in bed",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "joint_mobility",
+            "title": "Joint Mobility Flow",
+            "duration": 15,
+            "description": "Dynamic stretching for all major joints",
+            "instructions": "Circular movements for each joint, progressing head to toe",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "posterior_chain",
+            "title": "Posterior Chain Release",
+            "duration": 12,
+            "description": "Focus on back, hamstrings, and calves",
+            "instructions": "Series of forward folds and gentle back bends",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "mindful_steps",
+            "title": "Mindful Steps",
+            "duration": 10,
+            "description": "Basic walking meditation practice",
+            "instructions": "Walk slowly, focus on sensation of each step",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "gratitude_walk",
+            "title": "Gratitude Walk",
+            "duration": 15,
+            "description": "Combining walking with gratitude practice",
+            "instructions": "Walk naturally, mentally note things you're grateful for",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "breath_sync",
+            "title": "Breath-Synchronized Walking",
+            "duration": 20,
+            "description": "Coordinating breath with walking pace",
+            "instructions": "Match breath to steps, 4 steps inhale, 4 steps exhale",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "goal_visualization",
+            "title": "Goal Visualization",
+            "duration": 10,
+            "description": "Mental rehearsal of achieving specific goals",
+            "instructions": "Visualize your goal in detail, including actions and emotions",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "success_journal",
+            "title": "Success Journaling",
+            "duration": 15,
+            "description": "Document achievements and progress",
+            "instructions": "Write three recent successes and analyze what led to them",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "obstacle_planning",
+            "title": "Obstacle Planning",
+            "duration": 12,
+            "description": "Identify and plan around potential barriers",
+            "instructions": "List obstacles, brainstorm solutions, create action steps",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "achievement_meditation",
+            "title": "Achievement Meditation",
+            "duration": 8,
+            "description": "Focus on past successes and future goals",
+            "instructions": "Meditate on recent wins and visualize upcoming achievements",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "progress_review",
+            "title": "Progress Review",
+            "duration": 15,
+            "description": "Structured review of goals and milestones",
+            "instructions": "Evaluate progress, adjust strategies, plan next steps",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "power_posing",
+            "title": "Power Posing",
+            "duration": 5,
+            "description": "Confidence-boosting body positions",
+            "instructions": "Hold expansive poses while practicing positive self-talk",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "energy_breathing",
+            "title": "Energy Breathing",
+            "duration": 8,
+            "description": "Energizing breath work",
+            "instructions": "Practice rapid inhales and controlled exhales",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "quick_activation",
+            "title": "Quick Activation",
+            "duration": 6,
+            "description": "Physical and mental energizing routine",
+            "instructions": "Combine jumping jacks with motivational phrases",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "mental_energizer",
+            "title": "Mental Energizer",
+            "duration": 10,
+            "description": "Cognitive exercises for alertness",
+            "instructions": "Solve quick puzzles while moving or stretching",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "rhythm_boost",
+            "title": "Rhythm Boost",
+            "duration": 7,
+            "description": "Movement-based energy enhancement",
+            "instructions": "Dance or move to upbeat music with deep breathing",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "object_focus",
+            "title": "Object Focus",
+            "duration": 10,
+            "description": "Single-point concentration practice",
+            "instructions": "Focus on one object, notice details, maintain attention",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "mindful_counting",
+            "title": "Mindful Counting",
+            "duration": 8,
+            "description": "Number sequence concentration exercise",
+            "instructions": "Count breaths or objects while maintaining focus",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "task_chunking",
+            "title": "Task Chunking",
+            "duration": 15,
+            "description": "Break down and focus on single tasks",
+            "instructions": "Select task, divide into parts, focus on one segment",
+            "difficulty": "intermediate"
+        },
+        {
+            "id": "sensory_awareness",
+            "title": "Sensory Awareness",
+            "duration": 12,
+            "description": "Heighten focus through sensory attention",
+            "instructions": "Cycle through noticing sounds, sensations, and sights",
+            "difficulty": "beginner"
+        },
+        {
+            "id": "flow_state",
+            "title": "Flow State Practice",
+            "duration": 20,
+            "description": "Cultivate focused immersion",
+            "instructions": "Choose challenging task, eliminate distractions, maintain focus",
+            "difficulty": "advanced"
+        }
+    ]
+}
