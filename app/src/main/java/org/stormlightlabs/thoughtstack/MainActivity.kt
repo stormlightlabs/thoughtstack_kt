@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import dagger.hilt.android.AndroidEntryPoint
-import org.stormlightlabs.thoughtstack.ui.DeckListScreen
+import org.stormlightlabs.thoughtstack.ui.screens.DeckListScreen
 import org.stormlightlabs.thoughtstack.ui.theme.ThoughtStackTheme
 
 

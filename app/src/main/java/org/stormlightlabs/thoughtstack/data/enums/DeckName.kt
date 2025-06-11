@@ -1,16 +1,6 @@
-package org.stormlightlabs.thoughtstack.data
+package org.stormlightlabs.thoughtstack.data.enums
 
-interface NamedDeck {
-    /**
-     * Returns the name of the deck.
-     */
-    override fun toString(): String
-
-    /**
-     * Returns the filename of the deck.
-     */
-    fun filename(): String
-}
+import kotlin.enums.enumEntries
 
 enum class DeckName : NamedDeck {
     CBT {
@@ -48,30 +38,36 @@ enum class DeckName : NamedDeck {
 
         override fun filename(): String =
             throw UnsupportedOperationException("Custom decks do not have a filename")
+    };
+
+    companion object {
+        /**
+         * Return all [DeckName] values as a list.
+         */
+        fun allDeckNames(): List<DeckName> = listOf(
+            CBT, DBT, ACT, Exercise, Creativity, Rest, Custom
+        )
+
+        /**
+         * Returns a list of all deck filenames.
+         */
+        fun allFilenames(): List<String> = listOf(
+            CBT, DBT, ACT, Exercise, Rest, Creativity
+        ).map { it.filename() }
+
+        /**
+         * Returns a [DeckName] wrapped in a [Result] from a string name.
+         */
+        fun fromString(name: String): Result<DeckName> {
+            val deckName =
+                enumEntries<DeckName>().find { it.toString().equals(name, ignoreCase = true) }
+
+            if (deckName != null) {
+                return Result.success(deckName)
+            }
+
+            return Result.failure(IllegalArgumentException("Unknown deck name: $name"))
+        }
     }
 }
 
-/**
- * Return all [DeckName] values as a list.
- */
-fun allDeckNames(): List<DeckName> = listOf(
-    DeckName.CBT,
-    DeckName.DBT,
-    DeckName.ACT,
-    DeckName.Exercise,
-    DeckName.Creativity,
-    DeckName.Rest,
-    DeckName.Custom
-)
-
-/**
- * Returns a list of all deck filenames.
- */
-fun allFilenames(): List<String> = listOf(
-    DeckName.CBT,
-    DeckName.DBT,
-    DeckName.ACT,
-    DeckName.Exercise,
-    DeckName.Rest,
-    DeckName.Creativity
-).map { it.filename() }

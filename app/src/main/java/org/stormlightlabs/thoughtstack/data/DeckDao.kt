@@ -12,4 +12,13 @@ interface DeckDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertDeck(deck: DeckEntity)
+
+    @Query("SELECT * FROM decks WHERE id = :id AND name = :name")
+    suspend fun findDeck(id: String, name: String): DeckEntity?
+
+    @Query("SELECT * FROM decks WHERE id = :id")
+    suspend fun getDeckById(id: String): DeckEntity?
+
+    @Query("SELECT * FROM decks WHERE name = :name")
+    suspend fun getDeckByName(name: String): DeckEntity?
 }

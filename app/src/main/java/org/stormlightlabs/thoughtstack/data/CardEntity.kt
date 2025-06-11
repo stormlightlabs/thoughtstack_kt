@@ -27,5 +27,6 @@ data class CardEntity(
     val duration: Int,
     val difficulty: String,
     val description: String,
-    val instructions: String
+    val instructions: String,
+    val photoUri: String? = null
 )
