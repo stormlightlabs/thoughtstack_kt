@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import dagger.hilt.android.AndroidEntryPoint
-import org.stormlightlabs.thoughtstack.ui.screens.DeckListScreen
+import org.stormlightlabs.thoughtstack.ui.nav.AppNavHost
 import org.stormlightlabs.thoughtstack.ui.theme.ThoughtStackTheme
 
 
@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ThoughtStackTheme {
-                DeckListScreen()
+                AppNavHost()
             }
         }
     }

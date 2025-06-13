@@ -17,7 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import org.stormlightlabs.thoughtstack.ui.components.CustomCardDialog
-import org.stormlightlabs.thoughtstack.ui.components.DeckCardItem
+import org.stormlightlabs.thoughtstack.ui.components.DeckItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -35,7 +35,7 @@ fun HomeScreen(
         LazyColumn(Modifier.padding(padding)) {
             items(count = decks.size, itemContent = { index ->
                 val deck = decks[index]
-                DeckCardItem(
+                DeckItem(
                     deck = deck,
                     onClick = { onDeckClick(deck.id) },
                     modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)

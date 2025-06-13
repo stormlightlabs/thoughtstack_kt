@@ -1,6 +1,5 @@
 package org.stormlightlabs.thoughtstack.ui.screens
 
-
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -33,7 +32,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun DeckScreen(
+fun DeckListScreen(
     deckId: String, viewModel: DeckListViewModel = hiltViewModel(), onBack: () -> Unit
 ) {
     val cards by viewModel.cards.collectAsState()

@@ -6,12 +6,12 @@ import org.stormlightlabs.thoughtstack.data.DeckEntity
 
 @Serializable
 data class DeckDto(
-    val deckId: String, val name: String, val description: String, val cards: List<CardDto>
+    val name: String, val description: String, val cards: List<CardDto>
 ) {
     /**
      *  Map from the JSON shape into a [org.stormlightlabs.thoughtstack.data.DeckEntity]
      *  */
-    fun toEntity(): Pair<DeckEntity, List<CardEntity>> {
+    fun toEntity(deckId: String): Pair<DeckEntity, List<CardEntity>> {
         val deckEntity = DeckEntity(
             id = deckId, name = name, description = description
         )

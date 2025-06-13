@@ -14,8 +14,7 @@ import javax.inject.Inject
 /**
  * The Application subclass initializes Hilt and triggers asset → database loading on first launch.
  */
-@HiltAndroidApp
-open class ThoughtStackApplication : Application() {
+open class ThoughtStack : Application() {
     @Inject
     lateinit var db: AppDatabase
 
@@ -24,7 +23,7 @@ open class ThoughtStackApplication : Application() {
         val prefs = getSharedPreferences(Constants.PREFS_NAME, MODE_PRIVATE)
         if (prefs.getBoolean(Constants.PREF_FIRST_RUN, true)) {
             CoroutineScope(Dispatchers.IO).launch {
-                AssetLoader.loadFromAssets(this@ThoughtStackApplication, db)
+                AssetLoader.loadFromAssets(this@ThoughtStack, db)
                 prefs.edit { putBoolean(Constants.PREF_FIRST_RUN, false) }
             }
         }

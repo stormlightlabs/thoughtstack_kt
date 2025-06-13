@@ -5,7 +5,7 @@ import org.stormlightlabs.thoughtstack.data.CardEntity
 
 @Serializable
 data class CardDto(
-    val cardId: String,
+    val id: String,
     val title: String,
     val duration: Int,
     val difficulty: String,
@@ -16,7 +16,7 @@ data class CardDto(
      * Map from the JSON shape of a card into a [org.stormlightlabs.thoughtstack.data.CardEntity].
      */
     fun toEntity(deckId: String): CardEntity = CardEntity(
-        id = cardId,
+        id = id,
         deckOwnerId = deckId,
         title = title,
         duration = duration,

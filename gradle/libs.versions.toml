@@ -20,6 +20,8 @@ ksp = "2.1.21-2.0.1"
 hilt = "2.56.2"
 navigationCompose = "2.9.0"
 coilCompose = "3.2.0"
+hiltAndroidTesting = "2.56.2"
+hiltAndroidCompiler = "2.56.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version = "1.16.0" }
@@ -51,6 +53,8 @@ androidx-core = { group = "androidx.test", name = "core", version.ref = "core" }
 androidx-runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coilCompose" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hiltAndroidTesting" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

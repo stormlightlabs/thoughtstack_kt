@@ -11,11 +11,10 @@ object AssetLoader {
     private val json = Json { ignoreUnknownKeys = true }
 
     suspend fun loadFromAssets(context: Context, db: AppDatabase) {
-        for (deckFilePath in Constants.DECK_FILES) {
-            val contents = context.assets.open(deckFilePath).bufferedReader().use { it.readText() }
-
-            val deck: DeckDto = json.decodeFromString(contents)
-            val (deckEntity, cardEntities) = deck.toEntity()
+        for (it in Constants.DECK_FILES) {
+            val contents = context.assets.open(it.second).bufferedReader().use { it.readText() }
+            val deck = json.decodeFromString<DeckDto>(contents)
+            val (deckEntity, cardEntities) = deck.toEntity(it.first)
             db.deckDao().insertDeck(deckEntity)
             db.cardDao().insertCards(*cardEntities.toTypedArray())
         }

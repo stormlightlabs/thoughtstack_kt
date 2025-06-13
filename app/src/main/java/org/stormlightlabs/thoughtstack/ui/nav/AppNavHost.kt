@@ -1,10 +1,11 @@
-package org.stormlightlabs.thoughtstack.ui.navigation
+package org.stormlightlabs.thoughtstack.ui.nav
 
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.composable
+import org.stormlightlabs.thoughtstack.ui.screens.DeckListScreen
 import org.stormlightlabs.thoughtstack.ui.screens.HomeScreen
 
 @Composable
@@ -15,7 +16,7 @@ fun AppNavHost() {
             HomeScreen(onDeckClick = { navController.navigate("deck/$it") })
         }
         composable("deck/{deckId}") { backStackEntry ->
-            DeckScreen(
+            DeckListScreen(
                 deckId = backStackEntry.arguments!!.getString("deckId")!!,
                 onBack = { navController.popBackStack() })
         }
