@@ -1,6 +1,4 @@
-package org.stormlightlabs.thoughtstack.data
-
-import org.stormlightlabs.thoughtstack.data.enums.DeckName
+package org.stormlightlabs.thoughtstack.data.constants
 
 /**
  * Shared constants across the application.

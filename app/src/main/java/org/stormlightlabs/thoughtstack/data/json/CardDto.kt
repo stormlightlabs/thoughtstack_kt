@@ -1,7 +1,7 @@
 package org.stormlightlabs.thoughtstack.data.json
 
 import kotlinx.serialization.Serializable
-import org.stormlightlabs.thoughtstack.data.CardEntity
+import org.stormlightlabs.thoughtstack.data.db.CardEntity
 
 @Serializable
 data class CardDto(
@@ -13,7 +13,7 @@ data class CardDto(
     val instructions: String
 ) {
     /**
-     * Map from the JSON shape of a card into a [org.stormlightlabs.thoughtstack.data.CardEntity].
+     * Map from the JSON shape of a card into a [CardEntity].
      */
     fun toEntity(deckId: String): CardEntity = CardEntity(
         id = id,

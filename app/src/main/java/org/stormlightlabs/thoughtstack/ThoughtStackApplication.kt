@@ -6,16 +6,16 @@ import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import org.stormlightlabs.thoughtstack.data.AppDatabase
-import org.stormlightlabs.thoughtstack.data.AssetLoader
-import org.stormlightlabs.thoughtstack.data.Constants
+import org.stormlightlabs.thoughtstack.data.db.AppDatabase
+import org.stormlightlabs.thoughtstack.data.json.AssetLoader
+import org.stormlightlabs.thoughtstack.data.constants.Constants
 import javax.inject.Inject
 
 /**
  * The Application subclass initializes Hilt and triggers asset → database loading on first launch.
  */
 @HiltAndroidApp
-open class ThoughtStackApplication : Application() {
+class ThoughtStackApplication : Application() {
     @Inject
     lateinit var db: AppDatabase
 

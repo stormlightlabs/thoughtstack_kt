@@ -3,14 +3,13 @@ package org.stormlightlabs.thoughtstack
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import dagger.hilt.android.testing.CustomTestApplication
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.stormlightlabs.thoughtstack.data.enums.DeckName
+import org.stormlightlabs.thoughtstack.data.constants.DeckName
 import kotlin.random.Random
 
 @HiltAndroidTest

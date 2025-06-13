@@ -8,7 +8,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import org.stormlightlabs.thoughtstack.ui.nav.AppNavHost
 import org.stormlightlabs.thoughtstack.ui.theme.ThoughtStackTheme
 
-
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -7,10 +7,10 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import org.stormlightlabs.thoughtstack.data.AppDatabase
-import org.stormlightlabs.thoughtstack.data.CardDao
-import org.stormlightlabs.thoughtstack.data.DeckDao
-import org.stormlightlabs.thoughtstack.data.DeckRepository
+import org.stormlightlabs.thoughtstack.data.db.AppDatabase
+import org.stormlightlabs.thoughtstack.data.db.CardDao
+import org.stormlightlabs.thoughtstack.data.db.DeckDao
+import org.stormlightlabs.thoughtstack.data.db.DeckRepository
 import javax.inject.Singleton
 
 /**
@@ -18,13 +18,15 @@ import javax.inject.Singleton
  */
 @Module
 @InstallIn(SingletonComponent::class)
-object AppModule {
+object ThoughtStackAppModule {
     const val DATABASE_NAME = "thought_stack.db"
 
     @Provides
     @Singleton
     fun provideDatabase(@ApplicationContext ctx: Context): AppDatabase =
-        Room.databaseBuilder(ctx, AppDatabase::class.java, DATABASE_NAME).build()
+        Room.databaseBuilder(
+            ctx, AppDatabase::class.java, DATABASE_NAME
+        ).build()
 
     @Provides
     fun provideDeckDao(db: AppDatabase): DeckDao = db.deckDao()
@@ -34,5 +36,6 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideDeckRepository(deckDao: DeckDao, cardDao: CardDao) = DeckRepository(deckDao, cardDao)
+    fun provideDeckRepository(deckDao: DeckDao, cardDao: CardDao) =
+        DeckRepository(deckDao, cardDao)
 }

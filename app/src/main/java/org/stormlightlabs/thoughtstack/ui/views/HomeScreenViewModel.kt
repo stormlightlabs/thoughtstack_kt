@@ -1,4 +1,4 @@
-package org.stormlightlabs.thoughtstack.ui.screens
+package org.stormlightlabs.thoughtstack.ui.views
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -9,11 +9,11 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
-import org.stormlightlabs.thoughtstack.data.CardEntity
-import org.stormlightlabs.thoughtstack.data.DeckEntity
-import org.stormlightlabs.thoughtstack.data.DeckRepository
-import org.stormlightlabs.thoughtstack.data.enums.DeckName
-import org.stormlightlabs.thoughtstack.data.enums.DifficultyLevel
+import org.stormlightlabs.thoughtstack.data.db.CardEntity
+import org.stormlightlabs.thoughtstack.data.db.DeckEntity
+import org.stormlightlabs.thoughtstack.data.db.DeckRepository
+import org.stormlightlabs.thoughtstack.data.constants.DeckName
+import org.stormlightlabs.thoughtstack.data.constants.DifficultyLevel
 import java.util.UUID
 import javax.inject.Inject
 
@@ -23,7 +23,8 @@ class HomeScreenViewModel @Inject constructor(
 ) : ViewModel() {
 
     val decks: StateFlow<List<DeckEntity>> =
-        repo.getDecksFlow().stateIn(viewModelScope, SharingStarted.Companion.Lazily, emptyList())
+        repo.getDecksFlow()
+            .stateIn(viewModelScope, SharingStarted.Companion.Lazily, emptyList())
 
     // track dialog visibility
     private val _showDialog = MutableStateFlow(false)
@@ -38,10 +39,16 @@ class HomeScreenViewModel @Inject constructor(
     }
 
     fun addCustomCard(
-        title: String, duration: Int, description: String, instructions: String?, photoUri: String?
+        title: String,
+        duration: Int,
+        description: String,
+        instructions: String?,
+        photoUri: String?
     ) = viewModelScope.launch {
         val deck = repo.getOrCreateDeck(
-            deckId = "custom_deck", name = DeckName.Custom.toString(), description = null,
+            deckId = "custom_deck",
+            name = DeckName.Custom.toString(),
+            description = null,
         )
 
         val card = CardEntity(

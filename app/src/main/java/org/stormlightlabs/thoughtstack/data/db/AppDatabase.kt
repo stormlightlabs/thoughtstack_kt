@@ -1,4 +1,4 @@
-package org.stormlightlabs.thoughtstack.data
+package org.stormlightlabs.thoughtstack.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

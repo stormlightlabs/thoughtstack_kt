@@ -1,4 +1,4 @@
-package org.stormlightlabs.thoughtstack.data.enums
+package org.stormlightlabs.thoughtstack.data.constants
 
 import kotlin.enums.enumEntries
 

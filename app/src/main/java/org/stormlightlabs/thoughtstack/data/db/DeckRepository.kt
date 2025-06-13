@@ -1,4 +1,4 @@
-package org.stormlightlabs.thoughtstack.data
+package org.stormlightlabs.thoughtstack.data.db
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

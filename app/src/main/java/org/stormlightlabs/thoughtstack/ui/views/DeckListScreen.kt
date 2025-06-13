@@ -1,4 +1,4 @@
-package org.stormlightlabs.thoughtstack.ui.screens
+package org.stormlightlabs.thoughtstack.ui.views
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box

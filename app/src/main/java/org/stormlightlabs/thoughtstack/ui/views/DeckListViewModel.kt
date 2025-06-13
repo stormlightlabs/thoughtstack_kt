@@ -1,4 +1,4 @@
-package org.stormlightlabs.thoughtstack.ui.screens
+package org.stormlightlabs.thoughtstack.ui.views
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
@@ -9,8 +9,8 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.stateIn
-import org.stormlightlabs.thoughtstack.data.CardEntity
-import org.stormlightlabs.thoughtstack.data.DeckRepository
+import org.stormlightlabs.thoughtstack.data.db.CardEntity
+import org.stormlightlabs.thoughtstack.data.db.DeckRepository
 import javax.inject.Inject
 
 @HiltViewModel

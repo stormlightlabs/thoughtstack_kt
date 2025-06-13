@@ -12,11 +12,11 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
-import org.stormlightlabs.thoughtstack.data.AppDatabase
-import org.stormlightlabs.thoughtstack.data.CardDao
-import org.stormlightlabs.thoughtstack.data.CardEntity
-import org.stormlightlabs.thoughtstack.data.DeckDao
-import org.stormlightlabs.thoughtstack.data.DeckEntity
+import org.stormlightlabs.thoughtstack.data.db.AppDatabase
+import org.stormlightlabs.thoughtstack.data.db.CardDao
+import org.stormlightlabs.thoughtstack.data.db.CardEntity
+import org.stormlightlabs.thoughtstack.data.db.DeckDao
+import org.stormlightlabs.thoughtstack.data.db.DeckEntity
 
 /**
  * Unit tests for Room DAOs using an in-memory database.

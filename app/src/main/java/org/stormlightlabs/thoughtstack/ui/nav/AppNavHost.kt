@@ -3,10 +3,10 @@ package org.stormlightlabs.thoughtstack.ui.nav
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.composable
-import org.stormlightlabs.thoughtstack.ui.screens.DeckListScreen
-import org.stormlightlabs.thoughtstack.ui.screens.HomeScreen
+import androidx.navigation.compose.rememberNavController
+import org.stormlightlabs.thoughtstack.ui.views.DeckListScreen
+import org.stormlightlabs.thoughtstack.ui.views.HomeScreen
 
 @Composable
 fun AppNavHost() {

@@ -1,15 +1,15 @@
 package org.stormlightlabs.thoughtstack.data.json
 
 import kotlinx.serialization.Serializable
-import org.stormlightlabs.thoughtstack.data.CardEntity
-import org.stormlightlabs.thoughtstack.data.DeckEntity
+import org.stormlightlabs.thoughtstack.data.db.CardEntity
+import org.stormlightlabs.thoughtstack.data.db.DeckEntity
 
 @Serializable
 data class DeckDto(
     val name: String, val description: String, val cards: List<CardDto>
 ) {
     /**
-     *  Map from the JSON shape into a [org.stormlightlabs.thoughtstack.data.DeckEntity]
+     *  Map from the JSON shape into a [DeckEntity]
      *  */
     fun toEntity(deckId: String): Pair<DeckEntity, List<CardEntity>> {
         val deckEntity = DeckEntity(

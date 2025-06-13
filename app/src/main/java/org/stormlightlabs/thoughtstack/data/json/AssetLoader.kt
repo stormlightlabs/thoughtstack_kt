@@ -1,8 +1,9 @@
-package org.stormlightlabs.thoughtstack.data
+package org.stormlightlabs.thoughtstack.data.json
 
 import android.content.Context
 import kotlinx.serialization.json.Json
-import org.stormlightlabs.thoughtstack.data.json.DeckDto
+import org.stormlightlabs.thoughtstack.data.constants.Constants
+import org.stormlightlabs.thoughtstack.data.db.AppDatabase
 
 /**
  * Loads decks.json from assets and populates the Room database.
